@@ -1,0 +1,337 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bkgdboxcol: #fafafa; 
+  --white: #ffffff;
+  --boxshdw: #d1f2fe;
+}
+
+header {
+	text-align:center;
+	line-height:0.7vw;
+}
+body {
+	background-color: #ffffff; 
+}
+
+footer {
+	text-align:center;
+	padding:-0.5vw;
+}
+h1 {
+  text-align:center;
+}
+h2 {
+  font-size:7.3vw;
+  line-height:7vw;
+  font-family: Tahoma;
+  text-align:center;
+  padding: 1%;
+  margin:0px;
+  color: #0d0d0d; 
+}
+
+h3 {
+  font-size:clamp(10pt, 1.3vw, 1.3vw);
+  /*line-height:1.1vw;*/
+  font-family:Tahoma;
+  text-align:center;
+  padding: 1%;
+  margin:0px;
+}
+
+p {
+  font-family: Tahoma;
+  color: black;
+}
+
+.pageTitle {
+  font-size:clamp(20pt, 4vw, 4vw);
+  color: grey;
+  font-family: Tahoma;
+}
+
+/*
+.page {
+	background-color:#0d0d0d ;
+} */
+
+.pageSubtitle {
+	font-size: clamp(16pt, 3vw, 3vw);
+	font-family: Tahoma;
+	font-style: italic;
+	color: black; 
+	}
+
+.data {
+	  font-family:Tahoma;
+	  font-size: clamp(10pt, 1.3vw, 1.3vw); 
+	  }
+	  
+.dataB {
+	  font-family:Tahoma;
+	  font-size:clamp(11pt, 1.5vw, 1.7vw); 
+	  }
+	  
+	  
+.label {
+	  font-size:clamp(10pt, 1.3vw, 1.3vw); 
+	  font-family:Tahoma;
+	  }
+	  
+
+.box {
+  text-align: center;
+  grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bkgdboxcol);
+  box-shadow: 7px 7px 15px var(--boxshdw); 
+  border-radius: 0.5vw;
+}
+
+
+.bbox {
+  text-align: center;
+  grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bkgdboxcol);
+  box-shadow: 7px 7px 15px var(--boxshdw); 
+  border-radius: 0.5vw;
+}
+
+
+
+.bbbox {
+  text-align: center;
+  grid-column: span 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bkgdboxcol);
+  box-shadow: 7px 7px 15px var(--boxshdw); 
+  border-radius: 0.5vw;
+}
+
+
+.boxa {
+ position: relative;
+ height: 0;
+ width: 25%;
+ display: flex;
+  border-radius: 0px;
+  background: var(--bkgdboxcol);
+  padding-bottom: 12%;
+  margin-top:-12%; /*1vw;*/
+  margin-right:4vw;
+  border-radius: 0.5vw;
+}
+
+
+
+.boxb {
+  width: 50%;
+  text-align: center;
+  border-radius: 0px;
+  background: var(--bkgdboxcol); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top:1vw;
+   margin-bottom:1vw;
+border-radius: 0.5vw;
+}
+
+.boxflex {
+  text-align: center;
+  grid-column: span 3;
+  box-shadow: 7px 7px 15px var(--boxshdw); 
+  border-radius: 0.5vw;
+  background:var(--bkgdboxcol); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: black; 
+}
+	
+	
+.fillbox {
+   grid-column: span 3;
+}
+	  
+	  
+.boxunCont {
+  text-align: center;
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bkgdboxcol);
+  box-shadow: 7px 7px 15px var(--boxshdw); 
+  border-radius: 0.5vw;
+}
+
+.boxdeCont {
+  text-align: center;
+  grid-column: span 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5vw;
+  padding:0.5vw;
+  margin:0px;
+}
+
+
+.boxtroisCont {
+  
+  grid-column: span 3;
+  display: flex;
+  justify-content: left;
+  box-shadow: 7px 7px 15px var(--boxshdw);
+  background: var(--bkgdboxcol);
+  border-radius: 0.5vw;
+}
+
+.boxfraichDon {
+  text-align: center;
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  margin:0px;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    grid-template-rows: repeat(4, minmax(60px, auto));
+    grid-gap: 0.75vw;
+    padding-top:0.5vw;
+    padding-right:0.75vw;
+    padding-left:0.75vw;
+    padding-bottom:0.25vw;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    grid-auto-rows: repeat(auto-fill, minmax(200px, auto));
+    grid-gap: 0.75vw;
+    padding-top:0.5vw;
+    padding-right:0.75vw;
+    padding-left:0.75vw;
+    padding-bottom:0.25vw;
+	grid-auto-flow: dense 
+}
+
+
+.float-childa {
+    width: 15%;
+    text-align:right;
+    float: left;
+    padding-right: 0.5vw;
+    border: 0px solid black;
+}  
+
+.float-childb {
+    width: 63%;
+    float: left;
+    text-align:center;
+    font-size: 1vw;
+    padding-left: 5px;
+    border: 0px solid black;
+    display: block;
+}  
+
+
+.float-childaa {
+    float: right;
+    text-align:right;
+    padding-right: 0.5vw;
+    border: 0px solid black;
+}  
+
+.float-childbb {
+    float: left;
+    text-align:center;
+    padding-left: 5px;
+    border: 0px solid black;
+}  
+
+
+
+
+@media (min-width: 200px) {
+  .conteneur {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 10pt;
+}
+  .box {
+    grid-column: span 2;
+}
+  .bbbox {
+    grid-column: span 4;
+}
+  .float-childb {
+    width: 63%;
+}
+}
+
+
+@media (min-width: 900px) {
+  .conteneur {
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+}
+  .box {
+    grid-column: span 4;
+}
+  .bbbox {
+    grid-column: span 8;
+}
+  .float-childb {
+    width: 43%;
+}
+}
+
+
+@media (min-width: 1200px) {
+  .conteneur {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+}
+}
+
+#tempeChart {
+	width: 100%;
+	height:39vh;
+}
+
+#zdChart {
+	width: 100%;
+	height:39vh;
+}
+
+#qnhChart {
+	width: 100%;
+	height:39vh;
+}
+
+#windChart {
+	width: 100%;
+	height:39vh;
+}
+
+#myDiv {
+	width:100%;
+	height:39vh;
+}
