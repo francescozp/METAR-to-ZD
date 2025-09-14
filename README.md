@@ -1,4 +1,6 @@
 # METAR-to-ZD
+## (_Notice en Français en PDF dans le dossier!_)
+
 From METAR to your website to display density altitude
 
 _Density altitude is an essential parameter in flight preparation, especially when it is high. It directly influences aircraft performance, particularly during takeoff and landing. Density altitude increases with altitude and temperature, thereby reducing performance. In order to improve its members' awareness of the situation, the [Méribel flying club](http://www.ac-meribel.com), which is particularly concerned as it is located at 5640 ft,
