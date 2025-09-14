@@ -1,7 +1,7 @@
 # METAR-to-ZD
 From METAR to your website to display density altitude
 
-_Density altitude is an essential parameter in flight preparation, especially when it is high. It directly influences aircraft performance, particularly during takeoff and landing. Density altitude increases with altitude and temperature, thereby reducing performance. In order to improve its members' awareness of the situation, the [Méribel flying club](www.ac-meribel.com), which is particularly concerned as it is located at 5640 ft,
+_Density altitude is an essential parameter in flight preparation, especially when it is high. It directly influences aircraft performance, particularly during takeoff and landing. Density altitude increases with altitude and temperature, thereby reducing performance. In order to improve its members' awareness of the situation, the [Méribel flying club](http://www.ac-meribel.com), which is particularly concerned as it is located at 5640 ft,
 has developed a tool for measuring and displaying density altitude in real time in the club's premises, under the impetus of its president, Jean-François Grammont._
 
 _To facilitate the display of altitude-density in the premises of clubs located at airfields equipped with aeronautical meteorological information (METAR), the flying club has developed a tool that retrieves METAR data and displays it on the web page hosted by the club's website or on the club's kiosk or Smile TV FFA!_
