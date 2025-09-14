@@ -26,7 +26,7 @@ This operation aims to create a free online database to store the collected META
 
 In this way, the data is then stored directly on the servers of this database and is therefore easily accessible via the data consultation page that will be set up at the end of this tutorial.
 
-By visiting the Baserow page, you can easily open a free account by clicking on “Sign up” in the top right-hand corner. Once the account has been created, the home page of your Baserow space will be displayed.
+By visiting the [Baserow page](https://baserow.io/), you can easily open a free account by clicking on “Sign up” in the top right-hand corner. Once the account has been created, the home page of your [Baserow](https://baserow.io/) space will be displayed.
 
 ### 1.1. Creating a Baserow.io table
 Click on the “+ Add” button in the top right corner, then on “Database” to create a new database. In the window that opens, select “Blank database,” give it a name (without spaces), and confirm by clicking on “Add database.”
@@ -50,12 +50,12 @@ password in a safe place.
 + API documentation, which allows you to view the different ways to use the API in your space. In this documentation, you will find the database ID (which is not used in this project) and the table ID
 (`TABLE_ID`).
 
-With these two elements (`API_KEY` and `TABLE_ID`), you can now access the table you created on Baserow with an API. If you wish, you can test the API with Postman by creating a free account. This test is not essential for this project.
+With these two elements (`API_KEY` and `TABLE_ID`), you can now access the table you created on Baserow with an API. If you wish, you can test the API with [Postman](https://www.postman.com/) by creating a free account. This test is not essential for this project.
 
 ## 2. Download the file from GitHub
 Download the current METAR-to-ZD `ACMeteo` folder on your computer. Once the folder has been downloaded to your computer, unzip it and check that the `ACMeteo` folder contains two subfolders:
 
-**The altidensite folder** contains the `init.php` file, in which you will enter the data relating to your airfield and the display of data, by opening this file with a code editor (Geany, for example, which is free) and saving your changes:
+**The altidensite folder** contains the `init.php` file, in which you will enter the data relating to your airfield and the display of data, by opening this file with a code editor ([Geany](https://www.geany.org), for example, which is free) and saving your changes:
 ```
 // Aerodrome
 $AD = ’ LFXX ’;                         // ICAO Code of your AD equipped with METAR
@@ -94,7 +94,7 @@ which will normally call the METAR API and record the data on Baserow. To make s
 This section completes the installation of the system by hosting the necessary files on the flying club's server.
 
 ### 4.1. Automate data collection
-On the server hosting your club's website, place the `altidensite` folder and everything it contains at the same level as the publicly accessible folder (usually `www` or `public`). Data collection is performed by the `data-feed.php` script in the `altidensite/scripts` folder. Then consult your host's documentation (here is the OVH documentation, for example) to find out how to launch programs automatically (cronjobs or cron) so that the `data-feed.php script` runs at 04 minutes and 34 minutes past every hour (METAR data is available online at 03 minutes and 33 minutes past every hour), which may require creating two tasks, one at 04 minutes and the other at 34 minutes, which execute the same `data-feed.php` script.
+On the server hosting your club's website, place the `altidensite` folder and everything it contains at the same level as the publicly accessible folder (usually `www` or `public`). Data collection is performed by the `data-feed.php` script in the `altidensite/scripts` folder. Then consult your host's documentation (here is the [OVH documentation](https://help.ovhcloud.com/csm/fr-web-hosting-automated-tasks-cron?id=kb_article_view&sysparm_article=KB0052534), for example) to find out how to launch programs automatically (cronjobs or cron) so that the `data-feed.php script` runs at 04 minutes and 34 minutes past every hour (METAR data is available online at 03 minutes and 33 minutes past every hour), which may require creating two tasks, one at 04 minutes and the other at 34 minutes, which execute the same `data-feed.php` script.
 
 To check that your cronjob is working, wait 30 minutes or 1 hour and consult your Baserow table: if the cronjob is working, you should see the recorded data appear.
 
