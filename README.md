@@ -1,12 +1,15 @@
 # METAR-to-ZD
 From METAR to your website to display density altitude
 
-_Density altitude is an essential parameter in flight preparation, especially when it is high. It directly influences aircraft performance, particularly during takeoff and landing. Density altitude increases with altitude and temperature, thereby reducing performance. In order to improve its members' awareness of the situation, the Méribel flying club, which is particularly concerned as it is located at 5640 ft,
+_Density altitude is an essential parameter in flight preparation, especially when it is high. It directly influences aircraft performance, particularly during takeoff and landing. Density altitude increases with altitude and temperature, thereby reducing performance. In order to improve its members' awareness of the situation, the [Méribel flying club](www.ac-meribel.com), which is particularly concerned as it is located at 5640 ft,
 has developed a tool for measuring and displaying density altitude in real time in the club's premises, under the impetus of its president, Jean-François Grammont._
 
 _To facilitate the display of altitude-density in the premises of clubs located at airfields equipped with aeronautical meteorological information (METAR), the flying club has developed a tool that retrieves METAR data and displays it on the web page hosted by the club's website or on the club's kiosk or Smile TV FFA!_
 
 _This document explains how to set up this altitude-density display using METAR data. The entire system was designed and developed on a voluntary basis by the Méribel flying club and is available free of charge to clubs on Github METAR-to-ZD. This project can be set up quickly and only takes a few hours; it costs nothing to the flying club that implements it._
+
+<img width="1620" height="923" alt="Capture d’écran 2025-09-13 à 14 43 58" src="https://github.com/user-attachments/assets/16941f92-6ea3-4fea-a31a-d29b20db6d33" />
+
 
 ## Introduction
 Density altitude determines aircraft performance. It is an essential parameter for flight preparation, particularly in summer or when flying from an airport located at high altitude. When weather information is available at the airport, it needs to be interpreted in order to determine the density altitude.
